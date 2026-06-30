@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="udp_com" type="h264_udp_streamer" name="h264_udp_streamer_node" output="screen">
+        <param name="input_topic" value="/camera/infra1/image_rect_raw" />
+        <param name="target_ip" value="192.168.0.25" />
+        <param name="target_port" value="5000" />
+        <param name="width" value="640" />
+        <param name="height" value="480" />
+        <param name="fps" value="30" />
+        <param name="bitrate" value="2000000" /> 
+    </node>
+</launch>
