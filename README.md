@@ -25,7 +25,7 @@ sudo apt install -y gstreamer1.0-tools gstreamer1.0-plugins-good gstreamer1.0-pl
 ### 2. Build the Workspace
 ```bash
 cd ~/ego_ws_ros2
-colcon build --packages-select udp_com
+colcon build --symlink-install --packages-select udp_com
 source install/setup.bash
 ```
 
